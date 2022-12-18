@@ -42,3 +42,6 @@ apps/*/bin
 apps/*/obj
 libs/*/bin
 libs/*/obj
+/apps/sample-docs/node_modules
+/apps/sample-docs/public
+/apps/sample-docs/.cache

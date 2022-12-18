@@ -1,5 +1,13 @@
 {
   "version": 2,
-  "projects": {},
+  "projects": {
+    "sample-api": "apps/sample-api",
+    "sample-api-test": "apps/sample-api-test",
+    "sample-docs": "apps/sample-docs",
+    "sample-docs-e2e": "apps/sample-docs-e2e",
+    "sample-ui": "apps/sample-ui",
+    "sample-ui-e2e": "apps/sample-ui-e2e",
+    "shared-ui--sample-ui-lib": "libs/shared/ui/sample-ui-lib"
+  },
   "$schema": "./node_modules/nx/schemas/workspace-schema.json"
 }
