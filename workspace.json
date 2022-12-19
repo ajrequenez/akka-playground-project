@@ -5,9 +5,10 @@
     "sample-api-test": "apps/sample-api-test",
     "sample-docs": "apps/sample-docs",
     "sample-docs-e2e": "apps/sample-docs-e2e",
+    "sample-ng-ui": "apps/sample-ng-ui",
+    "sample-ng-ui-e2e": "apps/sample-ng-ui-e2e",
     "sample-ui": "apps/sample-ui",
-    "sample-ui-e2e": "apps/sample-ui-e2e",
-    "shared-ui--sample-ui-lib": "libs/shared/ui/sample-ui-lib"
+    "sample-ui-e2e": "apps/sample-ui-e2e"
   },
   "$schema": "./node_modules/nx/schemas/workspace-schema.json"
 }
