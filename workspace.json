@@ -8,7 +8,9 @@
     "sample-ng-ui": "apps/sample-ng-ui",
     "sample-ng-ui-e2e": "apps/sample-ng-ui-e2e",
     "sample-ui": "apps/sample-ui",
-    "sample-ui-e2e": "apps/sample-ui-e2e"
+    "sample-ui-e2e": "apps/sample-ui-e2e",
+    "sample-api-sample-api-model": "libs/sample-api/sample-api-model",
+    "sample-api-sample-api-model-test": "libs/sample-api/sample-api-model-test"
   },
   "$schema": "./node_modules/nx/schemas/workspace-schema.json"
 }

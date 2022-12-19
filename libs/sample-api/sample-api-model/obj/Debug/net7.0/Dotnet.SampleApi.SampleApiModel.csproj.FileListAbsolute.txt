@@ -1,0 +1,12 @@
+/Users/jrequenez/Projects/akka-playground-project/dist/libs/sample-api/sample-api-model/net7.0/Dotnet.SampleApi.SampleApiModel.deps.json
+/Users/jrequenez/Projects/akka-playground-project/dist/libs/sample-api/sample-api-model/net7.0/Dotnet.SampleApi.SampleApiModel.dll
+/Users/jrequenez/Projects/akka-playground-project/dist/libs/sample-api/sample-api-model/net7.0/Dotnet.SampleApi.SampleApiModel.pdb
+/Users/jrequenez/Projects/akka-playground-project/libs/sample-api/sample-api-model/obj/Debug/net7.0/Dotnet.SampleApi.SampleApiModel.csproj.AssemblyReference.cache
+/Users/jrequenez/Projects/akka-playground-project/libs/sample-api/sample-api-model/obj/Debug/net7.0/Dotnet.SampleApi.SampleApiModel.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jrequenez/Projects/akka-playground-project/libs/sample-api/sample-api-model/obj/Debug/net7.0/Dotnet.SampleApi.SampleApiModel.AssemblyInfoInputs.cache
+/Users/jrequenez/Projects/akka-playground-project/libs/sample-api/sample-api-model/obj/Debug/net7.0/Dotnet.SampleApi.SampleApiModel.AssemblyInfo.cs
+/Users/jrequenez/Projects/akka-playground-project/libs/sample-api/sample-api-model/obj/Debug/net7.0/Dotnet.SampleApi.SampleApiModel.csproj.CoreCompileInputs.cache
+/Users/jrequenez/Projects/akka-playground-project/libs/sample-api/sample-api-model/obj/Debug/net7.0/Dotnet.SampleApi.SampleApiModel.dll
+/Users/jrequenez/Projects/akka-playground-project/libs/sample-api/sample-api-model/obj/Debug/net7.0/refint/Dotnet.SampleApi.SampleApiModel.dll
+/Users/jrequenez/Projects/akka-playground-project/libs/sample-api/sample-api-model/obj/Debug/net7.0/Dotnet.SampleApi.SampleApiModel.pdb
+/Users/jrequenez/Projects/akka-playground-project/libs/sample-api/sample-api-model/obj/Debug/net7.0/ref/Dotnet.SampleApi.SampleApiModel.dll

@@ -1,4 +1,4 @@
-namespace Dotnet.SampleApi;
+namespace Dotnet.SampleApi.SampleApiModel;
 
 public class WeatherForecast
 {

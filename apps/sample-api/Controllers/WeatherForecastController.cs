@@ -1,4 +1,6 @@
+using Dotnet.SampleApi.SampleApiModel;
 using Microsoft.AspNetCore.Mvc;
+
 
 namespace Dotnet.SampleApi.Controllers;
 
