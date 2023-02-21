@@ -22,8 +22,10 @@
         ],
         "styles": ["apps/sample-ui/src/styles.css"],
         "scripts": [],
-        "webpackConfig": "@nrwl/react/plugins/webpack",
-        "postcssConfig": "apps/sample-ui/postcss.config.js"
+        "webpackConfig": "apps/sample-ui/webpack.config.js",
+        "postcssConfig": "apps/sample-ui/postcss.config.js",
+        "babelUpwardRootMode": true,
+        "isolatedConfig": true
       },
       "configurations": {
         "development": {
@@ -86,9 +88,7 @@
         "uiFramework": "@storybook/react",
         "styles": ["apps/sample-ui/src/styles.css"],
         "port": 4400,
-        "config": {
-          "configFolder": "apps/sample-ui/.storybook"
-        }
+        "configDir": "apps/sample-ui/.storybook"
       },
       "configurations": {
         "ci": {
@@ -98,14 +98,12 @@
     },
     "build-storybook": {
       "executor": "@nrwl/storybook:build",
-      "outputs": ["{options.outputPath}"],
+      "outputs": ["{options.outputDir}"],
       "options": {
         "uiFramework": "@storybook/react",
         "styles": ["apps/sample-ui/src/styles.css"],
-        "outputPath": "dist/storybook/sample-ui",
-        "config": {
-          "configFolder": "apps/sample-ui/.storybook"
-        }
+        "configDir": "apps/sample-ui/.storybook",
+        "outputDir": "dist/storybook/sample-ui"
       },
       "configurations": {
         "ci": {

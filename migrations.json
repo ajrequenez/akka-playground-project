@@ -1,100 +1,119 @@
 {
   "migrations": [
     {
+      "version": "15.7.0-beta.0",
+      "description": "Split global configuration files into individual project.json files. This migration has been added automatically to the beginning of your migration set to retroactively make them work with the new version of Nx.",
       "cli": "nx",
-      "version": "14.0.6",
-      "description": "Remove root property from project.json files",
-      "implementation": "./src/migrations/update-14-0-6/remove-roots",
-      "package": "nx",
-      "name": "14-0-6-remove-root"
-    },
-    {
-      "cli": "nx",
-      "version": "14.2.0-beta.0",
-      "description": "Add JSON Schema to Nx configuration files",
-      "implementation": "./src/migrations/update-14-2-0/add-json-schema",
-      "package": "nx",
-      "name": "14-2-0-add-json-schema"
-    },
-    {
-      "cli": "nx",
-      "version": "14.2.0-beta.0",
-      "description": "Remove default collection from configuration to switch to prompts for collection",
-      "implementation": "./src/migrations/update-14-2-0/remove-default-collection",
-      "package": "nx",
-      "name": "14-2-0-remove-default-collection"
-    },
-    {
-      "cli": "nx",
-      "version": "14.2.0-beta.5",
-      "description": "Replace all ./ and ../ in outputs with absolute paths",
-      "implementation": "./src/migrations/update-14-2-0/replace-all-relative-outputs-with-absolute",
-      "package": "nx",
-      "name": "14-2-0-replace-relative-outputs-with-absolute"
-    },
-    {
-      "cli": "nx",
-      "version": "14.3.4-beta.1",
-      "description": "Replace targetDependencies with targetDefaults",
-      "implementation": "./src/migrations/update-14-3-4/create-target-defaults",
-      "package": "nx",
-      "name": "14.3.4-create-target-defaults"
-    },
-    {
-      "cli": "nx",
-      "version": "15.0.0-beta.1",
-      "description": "Replace implicitDependencies with namedInputs + target inputs",
-      "implementation": "./src/migrations/update-15-0-0/migrate-to-inputs",
-      "package": "nx",
-      "name": "15.0.0-migrate-to-inputs"
-    },
-    {
-      "cli": "nx",
-      "version": "15.0.0-beta.1",
-      "description": "Prefix outputs with {workspaceRoot}/{projectRoot} if needed",
-      "implementation": "./src/migrations/update-15-0-0/prefix-outputs",
-      "package": "nx",
-      "name": "15.0.0-prefix-outputs"
-    },
-    {
-      "cli": "nx",
-      "version": "15.0.12-beta.1",
-      "description": "Set project names in project.json files",
-      "implementation": "./src/migrations/update-15-1-0/set-project-names",
-      "package": "nx",
-      "name": "15.1.0-set-project-names"
-    },
-    {
-      "version": "14.0.0-beta.0",
-      "description": "Changes the presets in nx.json to come from the nx package",
-      "cli": "nx",
-      "implementation": "./src/migrations/update-14-0-0/change-nx-json-presets",
+      "implementation": "./src/migrations/update-15-7-0/split-configuration-into-project-json-files",
       "package": "@nrwl/workspace",
-      "name": "14-0-0-change-nx-json-presets"
+      "name": "15-7-0-split-configuration-into-project-json-files"
     },
     {
-      "version": "14.0.0-beta.0",
-      "description": "Migrates from @nrwl/workspace:run-script to nx:run-script",
+      "version": "15.7.0-beta.0",
+      "description": "Split global configuration files (e.g., workspace.json) into individual project.json files.",
       "cli": "nx",
-      "implementation": "./src/migrations/update-14-0-0/change-npm-script-executor",
+      "implementation": "./src/migrations/update-15-7-0/split-configuration-into-project-json-files",
       "package": "@nrwl/workspace",
-      "name": "14-0-0-change-npm-script-executor"
+      "name": "15-7-0-split-configuration-into-project-json-files"
     },
     {
-      "version": "14.2.0",
-      "description": "Explicitly enable sourceAnalysis for all workspaces extending from npm.json or core.json (this was default behavior prior to 14.2)",
       "cli": "nx",
-      "implementation": "./src/migrations/update-14-2-0/enable-source-analysis",
-      "package": "@nrwl/workspace",
-      "name": "14-2-0-enable-source-analysis"
+      "version": "15.5.0-beta.0",
+      "description": "Update to Cypress v12. Cypress 12 contains a handful of breaking changes that might causes tests to start failing that nx cannot directly fix. Read more Cypress 12 changes: https://docs.cypress.io/guides/references/migration-guide#Migrating-to-Cypress-12-0.This migration will only run if you are already using Cypress v11.",
+      "factory": "./src/migrations/update-15-5-0/update-to-cypress-12",
+      "package": "@nrwl/cypress",
+      "name": "update-to-cypress-12"
     },
     {
-      "version": "14.8.0-beta.0",
-      "description": "Migrates from @nrwl/workspace:run-commands to nx:run-commands",
       "cli": "nx",
-      "implementation": "./src/migrations/update-14-8-0/change-run-commands-executor",
-      "package": "@nrwl/workspace",
-      "name": "14-8-0-change-run-commands-executor"
+      "version": "15.4.6-beta.0",
+      "description": "Refactor the Storybook target options",
+      "factory": "./src/migrations/update-15-4-6/refactor-executor-options",
+      "package": "@nrwl/storybook",
+      "name": "update-15.4.6"
+    },
+    {
+      "cli": "nx",
+      "version": "15.5.3-beta.0",
+      "description": "Add @nrwl/webpack if it is missing and is used.",
+      "factory": "./src/migrations/update-15-5-3/ensure-webpack-package",
+      "package": "@nrwl/storybook",
+      "name": "update-15-5-3"
+    },
+    {
+      "cli": "nx",
+      "version": "15.7.0-beta.0",
+      "description": "Add @storybook/addon-essentials to all project-level configs and attempt to remove root config.",
+      "factory": "./src/migrations/update-15-7-0/add-addon-essentials-to-all",
+      "package": "@nrwl/storybook",
+      "name": "update-15-7-0"
+    },
+    {
+      "cli": "nx",
+      "version": "15.7.1-beta.0",
+      "description": "Add node_modules to root eslint ignore",
+      "factory": "./src/migrations/update-15-7-1/add-eslint-ignore",
+      "package": "@nrwl/linter",
+      "name": "add-eslint-ignore"
+    },
+    {
+      "cli": "nx",
+      "version": "15.5.0-beta.0",
+      "requires": {
+        "@angular/core": ">=15.1.0"
+      },
+      "description": "Update the @angular/cli package version to ~15.1.0.",
+      "factory": "./src/migrations/update-15-5-0/update-angular-cli",
+      "package": "@nrwl/angular",
+      "name": "update-angular-cli-version-15-1-0"
+    },
+    {
+      "cli": "nx",
+      "version": "15.7.0-beta.1",
+      "description": "Install the required angular-devkit packages as we do not directly depend on them anymore",
+      "factory": "./src/migrations/update-15-7-0/install-required-packages",
+      "package": "@nrwl/angular",
+      "name": "install-required-packages"
+    },
+    {
+      "cli": "nx",
+      "version": "15.4.5-beta.0",
+      "description": "Removes es2015Polyfills option since legacy browsers are no longer supported.",
+      "factory": "./src/migrations/update-15-4-5/remove-es2015-polyfills-option",
+      "package": "@nrwl/webpack",
+      "name": "remove-es2015-polyfills-option"
+    },
+    {
+      "cli": "nx",
+      "version": "15.6.3-beta.0",
+      "description": "Creates or updates webpack.config.js file with the new options for webpack.",
+      "factory": "./src/migrations/update-15-6-3/webpack-config-setup",
+      "package": "@nrwl/webpack",
+      "name": "webpack-config-setup"
+    },
+    {
+      "cli": "nx",
+      "version": "15.7.2-beta.0",
+      "description": "Add the babelUpwardRootMode option to the build executor options.",
+      "factory": "./src/migrations/update-15-7-2/add-babelUpwardRootMode-flag",
+      "package": "@nrwl/webpack",
+      "name": "add-babelUpwardRootMode-flag"
+    },
+    {
+      "cli": "nx",
+      "version": "15.5.4-beta.0",
+      "description": "Update `@nrwl/web/babel` preset to `@nrwl/js/babel` for projects that have a .babelrc file.",
+      "factory": "./src/migrations/update-15-5-4/update-babel-preset",
+      "package": "@nrwl/web",
+      "name": "update-babel-preset"
+    },
+    {
+      "cli": "nx",
+      "version": "15.6.3-beta.0",
+      "description": "Creates or updates webpack.config.js file with the new options for webpack.",
+      "factory": "./src/migrations/update-15-6-3/webpack-config-setup",
+      "package": "@nrwl/react",
+      "name": "react-webpack-config-setup"
     }
   ]
 }
