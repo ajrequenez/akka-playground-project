@@ -450,3 +450,5 @@ libs/*/obj
 .angular
 
 apps/*/.vs
+
+**/obj

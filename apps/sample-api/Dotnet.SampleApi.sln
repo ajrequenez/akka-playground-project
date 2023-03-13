@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dotnet.SampleApi", "Dotnet.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dotnet.SampleApi.SampleApiModel", "..\..\libs\sample-api\sample-api-model\Dotnet.SampleApi.SampleApiModel.csproj", "{10D74649-6172-4E4A-AE61-C4B809CEDA98}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dotnet.Dotnet.SharedLibrary", "..\..\libs\dotnet\sharedLibrary\Dotnet.Dotnet.SharedLibrary.csproj", "{C60FA8B9-7768-47F2-BCAC-C6BE0F68A9AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dotnet.Dotnet.SharedLibrary.Test", "..\..\libs\dotnet\sharedLibrary.Test\Dotnet.Dotnet.SharedLibrary.Test.csproj", "{A7BC0A05-ACFB-41BA-AF58-B4B05FF21622}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{10D74649-6172-4E4A-AE61-C4B809CEDA98}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10D74649-6172-4E4A-AE61-C4B809CEDA98}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10D74649-6172-4E4A-AE61-C4B809CEDA98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C60FA8B9-7768-47F2-BCAC-C6BE0F68A9AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C60FA8B9-7768-47F2-BCAC-C6BE0F68A9AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C60FA8B9-7768-47F2-BCAC-C6BE0F68A9AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C60FA8B9-7768-47F2-BCAC-C6BE0F68A9AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7BC0A05-ACFB-41BA-AF58-B4B05FF21622}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7BC0A05-ACFB-41BA-AF58-B4B05FF21622}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7BC0A05-ACFB-41BA-AF58-B4B05FF21622}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7BC0A05-ACFB-41BA-AF58-B4B05FF21622}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
