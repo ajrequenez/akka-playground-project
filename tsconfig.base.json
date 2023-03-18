@@ -15,6 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@dotnet/actor-dashboard/ui//dashboard": [
+        "libs/actor-dashboard/ui/dashboard/src/index.ts"
+      ],
       "@dotnet/shared/ui//sample-ui-lib": [
         "libs/shared/ui/sample-ui-lib/src/index.ts"
       ]
