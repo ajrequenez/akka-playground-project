@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "OzhrELI9gsV9eCF8cUiQT9zCzwG9mmklWAChH4J0LlN2h0qu9O9FwtH3Q+MqG9NKC2kMs9OYVCkU6bg2LO7Cjw==",
+  "dgSpecHash": "eXepcNfoSw2hTaXevbiRdCzQOuLc4nGTNOMe9UEwNLhG8slHF56VZWGlLFuUxJqmm097+zq35vebTiAi35Tuuw==",
   "success": true,
   "projectFilePath": "/Users/jrequenez/Projects/akka-playground-project/libs/sample-api/sample-api-model/Dotnet.SampleApi.SampleApiModel.csproj",
   "expectedPackageFiles": [],

@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "Dotnet.ActorSystem": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      },
+      "dotnetRunMessages": true
+    }
+  }
+}

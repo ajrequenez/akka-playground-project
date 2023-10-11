@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dotnet.Dotnet.SharedLibrary
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dotnet.Dotnet.SharedLibrary.Test", "..\..\libs\dotnet\sharedLibrary.Test\Dotnet.Dotnet.SharedLibrary.Test.csproj", "{A7BC0A05-ACFB-41BA-AF58-B4B05FF21622}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dotnet.ActorSystem", "..\actor-system\Dotnet.ActorSystem.csproj", "{6F4EE963-4107-42E0-8DF0-CCE9179A7EA4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{A7BC0A05-ACFB-41BA-AF58-B4B05FF21622}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A7BC0A05-ACFB-41BA-AF58-B4B05FF21622}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A7BC0A05-ACFB-41BA-AF58-B4B05FF21622}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F4EE963-4107-42E0-8DF0-CCE9179A7EA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F4EE963-4107-42E0-8DF0-CCE9179A7EA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F4EE963-4107-42E0-8DF0-CCE9179A7EA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F4EE963-4107-42E0-8DF0-CCE9179A7EA4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

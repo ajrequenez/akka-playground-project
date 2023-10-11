@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-Dotnet.ActorSystem-36f545b0-ff2a-4e8c-acde-fb832beaa324</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.1" />
+    <PackageReference Include="Akka" Version="1.5.4" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Dotnet.Dotnet.SharedLibrary">
+      <HintPath>..\..\libs\dotnet\sharedLibrary\obj\Debug\net7.0\Dotnet.Dotnet.SharedLibrary.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
