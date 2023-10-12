@@ -452,3 +452,6 @@ libs/*/obj
 apps/*/.vs
 
 **/obj
+
+# Next.js
+.next
