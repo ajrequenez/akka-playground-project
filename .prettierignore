@@ -6,3 +6,5 @@
 /apps/sample-docs/node_modules
 /apps/sample-docs/public
 /apps/sample-docs/.cache
+
+.angular
