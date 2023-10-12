@@ -1,15 +1,24 @@
-import type { ComponentStory, ComponentMeta } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react';
 import { NxWelcome } from './nx-welcome';
 
-const Story: ComponentMeta<typeof NxWelcome> = {
+import { within } from '@storybook/testing-library';
+import { expect } from '@storybook/jest';
+
+const meta: Meta<typeof NxWelcome> = {
   component: NxWelcome,
   title: 'NxWelcome',
 };
-export default Story;
+export default meta;
+type Story = StoryObj<typeof NxWelcome>;
 
-const Template: ComponentStory<typeof NxWelcome> = (args) => (
-  <NxWelcome {...args} />
-);
+export const Primary = {
+  args: {},
+};
 
-export const Primary = Template.bind({});
-Primary.args = {};
+export const Heading: Story = {
+  args: {},
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+    expect(canvas.getByText(/Welcome to NxWelcome!/gi)).toBeTruthy();
+  },
+};

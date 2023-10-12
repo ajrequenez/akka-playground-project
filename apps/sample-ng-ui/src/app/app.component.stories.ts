@@ -1,19 +1,24 @@
-import { moduleMetadata, Story, Meta } from '@storybook/angular';
+import type { Meta, StoryObj } from '@storybook/angular';
 import { AppComponent } from './app.component';
 
-export default {
-  title: 'AppComponent',
+import { within } from '@storybook/testing-library';
+import { expect } from '@storybook/jest';
+
+const meta: Meta<AppComponent> = {
   component: AppComponent,
-  decorators: [
-    moduleMetadata({
-      imports: [],
-    }),
-  ],
-} as Meta<AppComponent>;
+  title: 'AppComponent',
+};
+export default meta;
+type Story = StoryObj<AppComponent>;
 
-const Template: Story<AppComponent> = (args: AppComponent) => ({
-  props: args,
-});
+export const Primary: Story = {
+  args: {},
+};
 
-export const Primary = Template.bind({});
-Primary.args = {};
+export const Heading: Story = {
+  args: {},
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+    expect(canvas.getByText(/app works!/gi)).toBeTruthy();
+  },
+};

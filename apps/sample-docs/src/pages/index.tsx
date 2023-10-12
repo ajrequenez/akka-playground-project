@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react"
 
-import * as styles from './index.module.css';
+import * as styles from "./index.module.css"
 
 export function Index() {
   /*
@@ -696,8 +696,8 @@ export function Index() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  {' '}
-                  What is Nx Cloud?{' '}
+                  {" "}
+                  What is Nx Cloud?{" "}
                 </a>
               </div>
               <a
@@ -745,9 +745,9 @@ export function Index() {
               </summary>
               <pre>
                 <span># Generate UI lib</span>
-                nx g @nrwl/angular:lib ui
+                nx g @nx/angular:lib ui
                 <span># Add a component</span>
-                nx g @nrwl/angular:component button --project ui
+                nx g @nx/angular:component button --project ui
               </pre>
             </details>
             <details>
@@ -816,7 +816,7 @@ export function Index() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default Index;
+export default Index
