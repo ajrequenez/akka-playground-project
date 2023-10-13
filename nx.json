@@ -58,11 +58,6 @@
   },
   "plugins": ["@nx-dotnet/core"],
   "generators": {
-    "@nrwl/gatsby": {
-      "application": {
-        "style": "css"
-      }
-    },
     "@nx/angular:application": {
       "style": "css",
       "linter": "eslint",
@@ -98,9 +93,6 @@
         "linter": "eslint"
       }
     }
-  },
-  "cli": {
-    "defaultCollection": "@nrwl/gatsby"
   },
   "defaultProject": "sample-ui"
 }
