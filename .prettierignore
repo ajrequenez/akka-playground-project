@@ -8,3 +8,5 @@
 /apps/sample-docs/.cache
 
 .angular
+
+/.nx/cache

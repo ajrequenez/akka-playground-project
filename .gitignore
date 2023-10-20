@@ -455,3 +455,4 @@ apps/*/.vs
 
 # Next.js
 .next
+.nx/cache
